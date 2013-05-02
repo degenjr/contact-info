@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Contact Form</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<form action="#" name="contact_form" id="contact_form">
+			<table>
+				<tbody>
+					<tr>
+						<th scope="row"><label for="street1">Street Address 1</label></th>
+						<td><input type="text" name="street1" id="street1" placeholder="e.g. 123 ISAT Way" required></td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="street2">Street Address 2</label></th>
+						<td><input type="text" name="street2" id="street2" placeholder="e.g. Apt. #23 (optional)"></td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="city">City</label></th>
+						<td><input type="text" name="city" id="city" placeholder="e.g. Harrisonburg" required></td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="state">State</label></th>
+						<td><select name="state" id="state" required><option value="">Select your state...</option></select></td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="zip">Zip</label></th>
+						<td><input type="text" name="zip" id="zip" placeholder="e.g. 22807" pattern="(\d{5}([\-]\d{4})?)" required></td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="phone">Phone</label></th>
+						<td><input type="tel" name="phone" id="phone" placeholder="e.g. XXX-XXX-XXXX" required></td>
+					</tr>
+					<tr>
+						<th scope="row"><label for="email">Email</label></th>
+						<td><input type="email" name="email" id="email" placeholder="e.g. me@somewhere.com" required></td>
+					</tr>
+					<tr>
+						<td colspan="2"><input type="submit" value="Submit"></td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+		<script src="js/validate.js"></script>
+	</body>
+</html>
